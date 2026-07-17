@@ -48,3 +48,41 @@ console.log(emailInput);
 console.log(navItems);
 console.log(firstNavLink);
 console.log(lastParagraph);
+
+/*Task 9.2 */
+const nav = document.querySelector("nav");
+
+// Parent
+console.log(nav.parentElement);
+
+// Children
+console.log(nav.children);
+console.log(nav.firstElementChild);
+console.log(nav.lastElementChild);
+
+// Siblings
+const article = document.querySelector("article");
+
+console.log(article.nextElementSibling);
+console.log(article.previousElementSibling);
+
+// Descendants
+const navLinks = nav.querySelectorAll("a");
+
+console.log(navLinks);
+
+// Practice
+
+const headerElement = document.getElementById("main-header");
+console.log(headerElement.querySelector("nav"));
+
+const firstNav = document.querySelector(".nav-link");
+console.log(firstNav.parentElement);
+
+console.log(article.nextElementSibling);
+
+const ul = document.querySelector("ul");
+console.log(ul.children);
+
+const footer = document.querySelector("footer");
+console.log(footer.parentElement);
