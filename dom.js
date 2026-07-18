@@ -86,3 +86,30 @@ console.log(ul.children);
 
 const footer = document.querySelector("footer");
 console.log(footer.parentElement);
+
+/*task 9.3*/
+const title = document.querySelector("h1");
+
+console.log(title.textContent);
+console.log(title.innerText);
+
+title.textContent = "Welcome to DOM Manipulation";
+
+const articleElement = document.querySelector("article");
+
+articleElement.innerHTML = `
+<h2>Updated Article</h2>
+<p>This content has been updated.</p>
+`;
+
+const link = document.querySelector(".nav-link");
+
+console.log(link.getAttribute("href"));
+
+link.setAttribute("href","https://example.com");
+
+const container = document.querySelector(".container");
+
+container.style.backgroundColor="#f0f0f0";
+container.style.padding="30px";
+container.style.borderRadius="10px";
