@@ -136,3 +136,79 @@ const clone=navItem.cloneNode(true);
 clone.querySelector("a").textContent="Blog";
 
 document.querySelector(".nav-list").appendChild(clone);
+
+/*task 10.1 event Listener*/
+const button=document.createElement("button");
+
+button.textContent="Click Me";
+
+document.body.appendChild(button);
+
+button.addEventListener("click",function(){
+
+alert("Button clicked!");
+
+});
+
+/*Click Counter*/
+let count=0;
+
+const counter=document.createElement("h2");
+
+counter.textContent=count;
+
+document.body.appendChild(counter);
+
+const plus=document.createElement("button");
+plus.textContent="+";
+
+const minus=document.createElement("button");
+minus.textContent="-";
+
+const reset=document.createElement("button");
+reset.textContent="Reset";
+
+document.body.append(plus,minus,reset);
+
+plus.addEventListener("click",()=>{
+
+count++;
+
+counter.textContent=count;
+
+});
+
+minus.addEventListener("click",()=>{
+
+if(count>0){
+
+count--;
+
+counter.textContent=count;
+
+}
+
+});
+
+reset.addEventListener("click",()=>{
+
+count=0;
+
+counter.textContent=count;
+
+});
+
+/*task 10.2 event object*/
+document.addEventListener("click",(event)=>{
+
+console.log(event.target);
+
+console.log(event.type);
+
+});
+
+document.addEventListener("keydown",(event)=>{
+
+console.log(event.key);
+
+});
