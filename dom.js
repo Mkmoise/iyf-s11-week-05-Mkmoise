@@ -113,3 +113,26 @@ const container = document.querySelector(".container");
 container.style.backgroundColor="#f0f0f0";
 container.style.padding="30px";
 container.style.borderRadius="10px";
+
+/*task 9.4*/
+
+const newParagraph=document.createElement("p");
+
+newParagraph.textContent="This is a new paragraph.";
+newParagraph.className="content highlight";
+
+const article2=document.querySelector("article");
+
+article2.appendChild(newParagraph);
+
+const footer2=document.querySelector("footer");
+
+// footer2.remove();
+
+const navItem=document.querySelector(".nav-link").parentElement;
+
+const clone=navItem.cloneNode(true);
+
+clone.querySelector("a").textContent="Blog";
+
+document.querySelector(".nav-list").appendChild(clone);
