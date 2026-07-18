@@ -86,12 +86,3 @@ console.log(ul.children);
 
 const footer = document.querySelector("footer");
 console.log(footer.parentElement);
-
-/*practice asynchronous  */
-function great(name){
-    console.log("Hello" +name);
-}
-function welcome (callback){
-    console.log("Moise");
-}
-welcome (great);
