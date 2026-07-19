@@ -1,6 +1,6 @@
-const form = document.getElementById("todo-form");
-const input = document.getElementById("todo-input");
-const todoList = document.getElementById("todo-list");
+const form = document.getElementById("index-form");
+const input = document.getElementById("index-input");
+const todoList = document.getElementById("index-list");
 const itemsLeft = document.getElementById("items-left");
 
 let count = 0;
