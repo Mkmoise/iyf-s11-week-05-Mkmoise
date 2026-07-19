@@ -212,3 +212,41 @@ document.addEventListener("keydown",(event)=>{
 console.log(event.key);
 
 });
+
+/*task 10.3*/
+document.getElementById("grandparent").addEventListener("click",()=>{
+
+console.log("Grandparent");
+
+});
+
+document.getElementById("parent").addEventListener("click",()=>{
+
+console.log("Parent");
+
+});
+
+document.getElementById("child").addEventListener("click",()=>{
+
+console.log("Child");
+
+});
+
+/*task 10.4*/
+const contactForm=document.getElementById("contact-form");
+
+contactForm.addEventListener("submit",(event)=>{
+
+event.preventDefault();
+
+const formData=new FormData(contactForm);
+
+const data=Object.fromEntries(formData);
+
+console.log(data);
+
+alert("Form Submitted Successfully!");
+
+contactForm.reset();
+
+});
