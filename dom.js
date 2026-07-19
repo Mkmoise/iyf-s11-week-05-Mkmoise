@@ -127,15 +127,6 @@ article2.appendChild(newParagraph);
 
 const footer2=document.querySelector("footer");
 
-// footer2.remove();
-
-const navItem=document.querySelector(".nav-link").parentElement;
-
-const clone=navItem.cloneNode(true);
-
-clone.querySelector("a").textContent="Blog";
-
-document.querySelector(".nav-list").appendChild(clone);
 
 /*task 10.1 event Listener*/
 const button=document.createElement("button");
@@ -250,3 +241,14 @@ alert("Form Submitted Successfully!");
 contactForm.reset();
 
 });
+
+  
+// footer2.remove();
+
+const navItem=document.querySelector(".nav-link").parentElement;
+
+const clone=navItem.cloneNode(true);
+
+clone.querySelector("a").textContent="Blog";
+
+document.querySelector(".nav-list").appendChild(clone);
