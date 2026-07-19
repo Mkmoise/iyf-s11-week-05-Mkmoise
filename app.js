@@ -14,12 +14,13 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    let li = document.createElement("li");
+    alert("The Add button is working!");
 
-    li.textContent = input.value;
+let li = document.createElement("li");
 
-    todoList.appendChild(li);
+li.textContent = input.value;
 
+todoList.appendChild(li);
     count++;
 
     itemsLeft.textContent = count + " items left";
