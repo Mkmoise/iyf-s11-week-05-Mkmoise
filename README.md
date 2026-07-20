@@ -3,6 +3,7 @@
 ## Student Information
 
 - **Name:** Moise Nyarugabo
+- **Student Number:2619
 - **GitHub Username:** Mkmoise
 - **Repository:** iyf-s11-week-05-Mkmoise
 
