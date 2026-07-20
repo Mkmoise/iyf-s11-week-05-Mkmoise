@@ -36,7 +36,26 @@ todoList.appendChild(li);
 
 });
 
+/*todoList.addEventListener("click", function(event) {
+
+    if (event.target.tagName == "BUTTON") {
+
+        event.target.parentElement.remove();
+
+        count--;
+
+        itemsLeft.textContent = count + " items left";
+
+    }
+
+});*/
 todoList.addEventListener("click", function(event) {
+
+    if (event.target.tagName == "LI") {
+
+        event.target.classList.toggle("completed");
+
+    }
 
     if (event.target.tagName == "BUTTON") {
 
